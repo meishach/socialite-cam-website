@@ -253,7 +253,7 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   left: 50%;
   width: auto;
   height: auto;
-  max-width: min(320px, 85vw);
+  max-width: min(440px, 85vw);
   max-height: 60vh;
   object-fit: contain;
   border-radius: 12px;
