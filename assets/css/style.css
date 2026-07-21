@@ -367,6 +367,16 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   margin: 0 auto;
 }
 
+.feature-full > .eyebrow {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.feature-full > h2 {
+  text-align: center;
+}
+
 .feature-list { list-style: none; margin: 0; padding: 0; }
 
 .feature-list li {
