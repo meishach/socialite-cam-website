@@ -47,6 +47,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  var stepCards = document.querySelectorAll(".step-card");
+  var supportsHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
+
+  if (!supportsHover && stepCards.length) {
+    stepCards.forEach(function (card) {
+      card.addEventListener("click", function (e) {
+        var alreadyActive = card.classList.contains("active");
+        stepCards.forEach(function (c) { c.classList.remove("active"); });
+        if (!alreadyActive) {
+          card.classList.add("active");
+          e.stopPropagation();
+        }
+      });
+    });
+
+    document.addEventListener("click", function () {
+      stepCards.forEach(function (c) { c.classList.remove("active"); });
+    });
+  }
+
   var toggle = document.querySelector(".nav-toggle");
   var links = document.querySelector(".nav-links");
 
