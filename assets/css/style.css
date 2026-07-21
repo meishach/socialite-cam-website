@@ -267,6 +267,11 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   max-width: min(640px, 90vw);
 }
 
+.step-reveal.step-reveal--wide-sm {
+  max-width: min(560px, 88vw);
+  max-height: 68vh;
+}
+
 .step-card:hover,
 .step-card.active {
   z-index: 20;
