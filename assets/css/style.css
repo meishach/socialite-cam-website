@@ -219,7 +219,7 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
 }
 
 @media (min-width: 700px) {
-  .nowrap-heading {
+  .section-head h2.nowrap-heading {
     white-space: nowrap;
     width: fit-content;
     margin-left: auto;
