@@ -253,43 +253,6 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   border: 1px solid var(--sc-border);
 }
 
-.step-reveal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  max-width: min(440px, 85vw);
-  max-height: 60vh;
-  object-fit: contain;
-  border-radius: 12px;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.85);
-  transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
-  pointer-events: none;
-}
-
-.step-reveal.step-reveal--wide {
-  max-width: min(640px, 90vw);
-}
-
-.step-reveal.step-reveal--wide-sm {
-  max-width: min(560px, 88vw);
-  max-height: 68vh;
-}
-
-.step-card:hover,
-.step-card.active {
-  z-index: 20;
-}
-
-.step-card:hover .step-reveal,
-.step-card.active .step-reveal {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
-}
-
 .step-num {
   width: 36px;
   height: 36px;
@@ -300,11 +263,96 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-.step-card h3 { margin: 0 0 8px; font-size: 1.08rem; color: var(--sc-navy); }
-.step-card p { margin: 0; color: var(--sc-ink-soft); font-size: 0.95rem; line-height: 1.55; }
+.step-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.step-icon svg { width: 24px; height: 24px; }
+
+.step-icon--coral  { background: #e0623f; }
+.step-icon--violet { background: #7c5cbf; }
+.step-icon--blue   { background: var(--sc-blue); }
+.step-icon--teal   { background: #2c9e8f; }
+.step-icon--gold   { background: #d19a2b; }
+
+.step-card h3 { margin: 0 0 6px; font-size: 1.08rem; color: var(--sc-navy); }
+.step-summary { margin: 0; color: var(--sc-ink-soft); font-size: 0.92rem; line-height: 1.5; }
+
+.step-visual {
+  position: absolute;
+  top: 80%;
+  left: 82%;
+  transform: translate(-50%, -50%) scale(0.22);
+  transition: top 0.35s ease, left 0.35s ease, transform 0.35s ease;
+  pointer-events: none;
+  z-index: 5;
+  text-align: center;
+}
+
+.step-visual .step-reveal-img {
+  width: auto;
+  height: auto;
+  max-width: min(320px, 85vw);
+  max-height: 55vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.step-visual.step-visual--wide .step-reveal-img {
+  max-width: min(560px, 90vw);
+}
+
+.step-visual.step-visual--wide-sm .step-reveal-img {
+  max-width: min(480px, 88vw);
+  max-height: 62vh;
+}
+
+.step-caption {
+  margin: 10px auto 0;
+  max-width: 260px;
+  background: var(--sc-white);
+  color: var(--sc-ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: var(--sc-shadow);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.step-card:hover,
+.step-card.active {
+  z-index: 20;
+}
+
+.step-card:hover .step-visual,
+.step-card.active .step-visual {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.step-card:hover .step-reveal-img,
+.step-card.active .step-reveal-img {
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.step-card:hover .step-caption,
+.step-card.active .step-caption {
+  opacity: 1;
+}
 
 .steps-hint {
   margin: 32px 0 0;
@@ -594,7 +642,7 @@ section { padding: 70px 0; scroll-margin-top: 100px; }
   .nav-links a { color: #d9ecf3; }
   .brand-logo img { filter: brightness(0) invert(1); }
   .step-card, .cta-band, .feature-list li { background: #12262e; border-color: rgba(255,255,255,0.08); }
-  .step-card p, .feature-list p, .cta-band p, .section-head p, .hero p.lede, .footer-links, .footer-fine, .contact-links { color: #a9c2ca; }
+  .step-summary, .feature-list p, .cta-band p, .section-head p, .hero p.lede, .footer-links, .footer-fine, .contact-links { color: #a9c2ca; }
   .dashboard-breakout { background: linear-gradient(135deg, #0f1e24 0%, #15303a 50%, #0f1e24 100%); }
   .dashboard-points li { color: #a9c2ca; }
   .dashboard-breakout h3, .dashboard-points strong { color: #eaf2f5; }
