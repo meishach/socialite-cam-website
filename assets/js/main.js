@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   initCarousel("trustCarousel", "hero-carousel");
 
+  ["navHaveQuestions", "footerHaveQuestions"].forEach(function (id) {
+    var btn = document.getElementById(id);
+    if (!btn) return;
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (typeof window.showZForm_325648 === "function") {
+        window.showZForm_325648();
+      }
+    });
+  });
+
   function initCarousel(containerId, folder) {
     var carousel = document.getElementById(containerId);
     if (!carousel) return;

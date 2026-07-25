@@ -6,6 +6,124 @@
 <title>Socialite Cam — The Roaming Photo Experience for Brands Who Think Big</title>
 <meta name="description" content="Socialite Cam is the branded, roaming photo experience for large-scale events — instant MMS delivery, custom activations, and exponential social reach." />
 <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+.zf_lB_Dimmer_325648{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: 10000000;
+}
+
+.zf_lB_Container_325648{
+	position: fixed;
+	background-color: white;
+	margin: 0;
+	margin-right: 0px;
+	padding: 0;
+	height: 1191px;
+	width:  70%;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	border: 7px solid none;
+	max-height: calc(100% - 60px);
+	z-index: 999999;
+	transition: height 0.5s ease;
+	outline : none;
+}
+
+.zf_lB_Wrapper_325648{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 0;
+    margin-top: -180px;
+    z-index: 10000001;
+}
+
+.zf_main_id_325648{
+	height: calc(100% - 0px);
+	display: flex;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.zf_lb_closeform_325648 {
+    position: absolute;
+    right: -20px;
+    background: #2f2e2e;
+    padding: 0;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+}
+.zf_lb_closeform_325648:before, .zf_lb_closeform_325648:after {
+    position: absolute;
+    left: 16px;
+    content: ' ';
+    height: 19px;
+    width: 2px;
+    top: 7px;
+    background-color: #f7f7f7;
+}
+
+.zf_lb_closeform_325648:before {
+  transform: rotate(45deg);
+}
+.zf_lb_closeform_325648:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-device-width: 10px) and (max-device-width: 380px) {
+   .zf_lB_Container_325648 {
+  width: 270px !important;
+}
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 480px) {
+   .zf_lB_Container_325648 {
+  width: 350px !important;
+}
+}
+
+@media screen and (min-device-width: 440px) and (max-device-width: 500px) {
+   .zf_lB_Container_325648 {
+  width: 380px !important;
+}
+}
+
+@media only screen  and (min-width:500px) and (max-width:600px)  {
+ 	.zf_lB_Container_325648 {
+	width: 450px;
+ }
+}
+
+@media only screen  and (min-width:601px) and (max-width:700px)  {
+ 	.zf_lB_Container_325648 {
+	width: 540px;
+ }
+}
+
+@media only screen  and (min-width:700px) and (max-width:800px)  {
+.zf_lB_Container_325648 {
+	width: 650px;
+ }
+}
+
+@media screen and (min-device-width: 801px) and (max-device-width: 1268px) {
+   .zf_lB_Container_325648 {
+  width: 750px !important;
+}
+}
+</style>
 </head>
 <body>
 
@@ -19,7 +137,7 @@
       <li><a href="#for-brands">For Brands &amp; Events</a></li>
       <li><a href="#activation">Data &amp; Activation</a></li>
       <li><a href="weddings.html">Weddings &amp; Private Events</a></li>
-      <li><a href="#contact" class="nav-cta">Book Socialite Cam</a></li>
+      <li><a href="#" id="navHaveQuestions" class="nav-cta">Have Questions?</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
@@ -222,7 +340,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer-top">
-    <a href="mailto:studio@socialitecam.com" class="btn btn-primary">Book Socialite Cam</a>
+    <a href="#" id="footerHaveQuestions" class="btn btn-primary">Have Questions?</a>
   </div>
   <div class="wrap">
     <ul class="footer-links">
@@ -235,6 +353,209 @@
   <p class="footer-fine">&copy; 2026 Socialite Cam, a division of Social House Photography LLC. All rights reserved.</p>
 </footer>
 
+<script type="text/javascript">(function() {
+	try{
+
+			if( document.readyState == "complete" ){
+				onloadActions_325648();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_325648();
+			  	}, false);
+			}
+
+			function onloadActions_325648(){
+				constructDiv_325648();
+				loadZForm_325648();
+			}
+
+			function constructDiv_325648(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648');
+				iframeDiv.setAttribute('class','zf_main_id_325648');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_325648');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_325648');
+				closeFormDiv.setAttribute('tabindex', 0);
+
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_325648');
+				containerDiv.setAttribute('class','zf_lB_Container_325648 ');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_325648');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_325648');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_325648');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			window.showZForm_325648 = function(){
+				var iframe = document.getElementById("tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_325648();
+
+				}
+				document.getElementById("formsLightBox_325648").style.display = "block";
+				document.body.style.overflow = "hidden";
+				setTimeout(function() {
+				    var containerDiv = document.getElementById("containerDiv_325648");
+				    containerDiv.setAttribute('tabindex', '-1');
+				    containerDiv.focus();
+				}, 100);
+			}
+
+			function deleteZForm_325648() {
+				var divCont = document.getElementById("formsLightBox_325648");
+				divCont.style.display="none";
+				document.body.style.overflow = "";
+
+				var iframe = document.getElementById("tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648").getElementsByTagName("iframe")[0];
+				iframe.remove();
+			}
+
+			function loadZForm_325648() {
+				var iframe = document.getElementById("tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_325648('https://forms.zohopublic.com/socialhousephotography/form/WelcometotheSocialiteCamexperience/formperma/tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs?zf_rszfm=1');
+
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_325648");
+					deleteForm.onclick =  deleteZForm_325648;
+					deleteForm.addEventListener("keydown", function (event) {
+						if (event.key === "Enter" || event.keyCode === 13 || event.key === " " || event.keyCode === 32) {
+							event.preventDefault();
+							deleteZForm_325648();
+						}
+					});
+
+
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("tl5ns2jz2NL9_pJl-wGn8orQzpkWcm2bD6pz955GYqs_325648").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+
+									var zf_tout = false;
+									if( zf_ifrm_data.length == 3 ) {
+									    iframe.scrollIntoView();
+									    zf_tout = true;
+									}
+
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+										if( zf_tout ) {
+											setTimeout(function(){
+										        iframe.style.minHeight = zf_ifrm_ht_nw;
+												var containerDiv = document.getElementById("containerDiv_325648");
+												containerDiv.style.height=zf_ifrm_ht_nw;
+										    },500);
+										} else {
+										    iframe.style.minHeight = zf_ifrm_ht_nw;
+											var containerDiv = document.getElementById("containerDiv_325648");
+											containerDiv.style.height=zf_ifrm_ht_nw;
+										}
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+
+
+			function getsrcurlZForm_325648(zf_src) {
+				try {
+
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+					if (!((new RegExp("[?&]referrername=")).test(zf_src))) {
+            var rfr = window.location.href;
+
+            try {
+                rfr = window.self !== window.top ?
+                    window.top.location.href :
+                    (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
+            } catch (e) {}
+
+            if (rfr && rfr !== "") {
+                if (rfr.length > 1800) {
+                    var queryIndex = rfr.indexOf('?');
+                    if (queryIndex > -1) {
+                        rfr = rfr.substring(0, queryIndex);
+                    }
+                    if (rfr.length > 1800) {
+                        rfr = rfr.substring(0, 1800);
+                    }
+                }
+                zf_src += ((zf_src.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+            }
+        }
+				}catch(e){}
+				return zf_src;
+			}
+
+
+	}catch(e){}
+})();
+</script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
