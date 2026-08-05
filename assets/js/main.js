@@ -12,6 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  ["heroGetQuote", "contactGetQuote"].forEach(function (id) {
+    var btn = document.getElementById(id);
+    if (!btn) return;
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (typeof window.showZForm_762673 === "function") {
+        window.showZForm_762673();
+      }
+    });
+  });
+
   function initCarousel(containerId, folder) {
     var carousel = document.getElementById(containerId);
     if (!carousel) return;
